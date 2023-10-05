@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Debug TypeScript with ts-node",
+        "runtimeExecutable": "ts-node",
+        "program": "${workspaceFolder}/src/index.ts",
+        "cwd": "${workspaceFolder}",
+        "sourceMaps": true,
+        "outFiles": ["${workspaceFolder}/dist/**/*.js"],
+        "env": {
+          "NODE_ENV": "development"
+        },
+        "console": "integratedTerminal"
+      }
+    ]
+  }
